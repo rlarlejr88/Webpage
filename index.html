@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Let me know about you</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="title">Let me know about you!</h1>
+        <p id="description">You can let me know by yourself</p>
+        <form action="" id="survey-form">
+            <fieldset>
+                <label id="name-label">Name : <input type="text" id="name" required="required" placeholder="name"></label>
+                <label id="email-label">Email : <input type="email" id="email" required="required" placeholder="email"></label>
+                <label id="number-label">Age : <input type="number" id="number" min="0" max="120" placeholder="number"></label>
+                <label for="">
+                    <p class="dropdown">Select</p>
+                    <select name="" id="dropdown" >
+                        <option value="">Man</option>
+                        <option value="">Female</option>
+                    </select>
+                </label>
+                <p>Are you good person?</p>
+                <label id="input-radio">Yes <input class="radio" type="radio" value="value" name="name"></label>
+                <label id="input-radio">No <input class="radio" type="radio" value="value" name="name"></label>
+                <label>
+                    <p>Do you have Dog or Cat?</p>
+                    <p>Dog  <input class="checkbox" type="checkbox" name="" value="survey-form"></p>
+                    <p>Cat  <input class="checkbox" type="checkbox" name="" value="survey-form"></p>
+                </label>
+                <label for="">
+                    <p>Comment</p>
+                    <textarea name="" id="" cols="30"></textarea>
+                </label>
+                <input type="submit" value="submit" id="submit">
+            </fieldset>
+        </form>
+    </body>
 </html>
